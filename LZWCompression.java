@@ -31,7 +31,7 @@ public class LZWCompression {
         // put all possible 1 byte values into the codeword table
         for (int i = -128; i <= 127; i++) {
             codewordTable.put(String.valueOf((char) i), i + 128);
-            // byte value casted to char before string encoding to save some space;
+            // byte value cast to char before string encoding to save some space;
             // use String.valueOf() in favor of Character.toString() as the latter is
             // basically a wrapper of the former
 
@@ -102,7 +102,7 @@ public class LZWCompression {
     public void compress(DataInputStream in, DataOutputStream out) throws IOException {
         System.out.println("Compressing...");
         initCodewords();  // initialize codeword table
-        char byteIn;  // the current read-in byte; it's casted to char to save some space in the currPrefix string below
+        char byteIn;  // the current read-in byte; it's cast to char to save some space in the currPrefix string below
         int codeword;
         StringBuilder currPrefix = new StringBuilder();  // current prefix under examination
         String currPrefixStr;
