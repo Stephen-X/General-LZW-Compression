@@ -11,13 +11,13 @@ Note that the algorithm performs best on large amount of data that haven't been 
 ## How to Use
 
 ```bash
-// compile
+# compile
 javac LZWCompression.java
 
-// compress
+# compress
 java LZWCompression c [original_file_name] [compressed_file_name]
 
-// de-compress
+# de-compress
 java LZWCompression d [compressed_file_name] [decompressed_file_name]
 ```
 
